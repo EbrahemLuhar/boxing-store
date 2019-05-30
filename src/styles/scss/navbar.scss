@@ -1,0 +1,113 @@
+header {
+    background: $black;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+
+    .header-container {
+        max-width: 1200px;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 2.5rem;
+            font-family: 'Oswald', sans-serif;
+            color: $gray;
+            text-decoration: none;
+            padding-left: 10px;
+        }
+
+        .navbar {
+            padding-left: 10px;
+            a {
+                text-decoration: none;
+                color: $gray;
+                padding: 16px 8px;
+                border-top: 4px solid transparent;
+                transition: all .3s ease-in-out; 
+
+                &:hover {
+                    border-top: 4px solid $lightBlue;
+                    color: $lightBlue;
+                }
+            }
+        }
+
+        .basket {
+            cursor: pointer;
+            padding-left: 10px;
+            .fa-shopping-basket {
+                font-size: 2rem;
+                color: $gray;
+            }
+
+            .basket-num {
+                position: relative;
+                top: -18px;
+                left: -12px;
+                color: $gray;
+                background: $darkSand;
+                padding: 2px 6px;
+                border-radius: 50%;
+            }
+
+            .burger {
+                display: none;
+                float: right;
+                position: relative;
+                top: 8px;
+                padding-right: 10px;
+
+                div {
+                    width: 25px;
+                    height: 3px;
+                    background: $gray;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        .header-container {
+            .logo {
+                font-size: 2rem;
+                font-family: 'Oswald', sans-serif;
+                color: $gray;
+                text-decoration: none;
+                padding-left: 10px;
+            }
+    
+            .navbar {
+                display: none;
+            }
+    
+            .basket {
+                cursor: pointer;
+                padding-left: 10px;
+                .fa-shopping-basket {
+                    font-size: 1.4rem;
+                    color: $gray;
+                }
+    
+                .basket-num {
+                    top: -14px;
+                    left: -12px;
+                }
+    
+                .burger {
+                    display: block;
+                    top: 4px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
