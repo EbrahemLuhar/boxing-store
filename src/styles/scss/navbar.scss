@@ -40,7 +40,7 @@ header {
 
         .basket {
             cursor: pointer;
-            padding-left: 10px;
+            padding: 5px 5px 5px 10px;
             .fa-shopping-basket {
                 font-size: 2rem;
                 color: $gray;
@@ -93,19 +93,22 @@ header {
                 cursor: pointer;
                 padding-left: 10px;
                 .fa-shopping-basket {
+                    position: relative;
+                    top: 10px;
                     font-size: 1.4rem;
                     color: $gray;
                 }
     
                 .basket-num {
-                    top: -14px;
+                    top: -2px;
                     left: -12px;
                 }
     
                 .burger {
                     display: block;
-                    top: 4px;
-                    margin-left: 10px;
+                    top: 1px;
+                    margin-left: 5px;
+                    padding: 10px; 
                 }
             }
         }

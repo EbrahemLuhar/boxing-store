@@ -8,9 +8,19 @@ const navSlide = () => {
     const activeOverlay = document.querySelector('.overlay-active')
 
     // Toggle mobile nav
-    burger.addEventListener('click', () => {
+
+    function CloseMobileNav() {
+        nav.classList.remove('mobile-nav-slide');
+        overlay.classList.remove('overlay-active');
+    }
+
+    function OpenMobileNav() {
         nav.classList.add('mobile-nav-slide');
         overlay.classList.add('overlay-active');
+    }
+
+    burger.addEventListener('click', () => {
+        OpenMobileNav();
     });
 
     closeNav.addEventListener('click', () => {
@@ -20,11 +30,6 @@ const navSlide = () => {
     overlay.addEventListener('click', () => {
         CloseMobileNav();
     });
-
-    function CloseMobileNav() {
-        nav.classList.remove('mobile-nav-slide');
-        overlay.classList.remove('overlay-active');
-    }
 }
 
 navSlide();
