@@ -26,13 +26,15 @@ header {
             padding-left: 10px;
             a {
                 text-decoration: none;
+                font-size: 0.85rem;
+                letter-spacing: 1px;
                 color: $gray;
-                padding: 16px 8px;
+                padding: 18px 12px;
                 border-top: 4px solid transparent;
                 transition: all .3s ease-in-out; 
 
                 &:hover {
-                    border-top: 4px solid $lightBlue;
+                    border-top: 5px solid $lightBlue;
                     color: $lightBlue;
                 }
             }
@@ -48,6 +50,8 @@ header {
 
             .basket-num {
                 position: relative;
+                font-size: 0.8rem;
+                font-weight: 600;
                 top: -18px;
                 left: -12px;
                 color: $gray;

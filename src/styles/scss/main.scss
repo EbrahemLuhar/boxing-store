@@ -1,7 +1,9 @@
 @import 'reset';
+@import 'glider';
 @import 'variables';
 @import 'navbar';
 @import 'mobile-menu';
+@import 'top-carousel';
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald:400,600&display=swap');
 
@@ -12,6 +14,12 @@
 body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+
+    background: url('https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/boxing-bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .overlay {

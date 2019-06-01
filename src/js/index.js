@@ -1,11 +1,11 @@
 import '../../src/styles/scss/main.scss';
+import glider from './glider';
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.mobile-menu');
     const closeNav = document.querySelector('.fa-times');
     const overlay = document.querySelector('.overlay');
-    const activeOverlay = document.querySelector('.overlay-active')
 
     // Toggle mobile nav
 
@@ -31,5 +31,18 @@ const navSlide = () => {
         CloseMobileNav();
     });
 }
+
+window.addEventListener('load', function(){
+    new Glider(document.querySelector('.glider'), {
+        slidesToShow: 1,
+        dots: '#dots',
+        draggable: false,
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        }
+    });
+});
+
 
 navSlide();
