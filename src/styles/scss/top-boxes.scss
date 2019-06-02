@@ -1,0 +1,82 @@
+.category-boxes {
+    border-top: 0.5rem solid $orange;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+
+    a {
+        text-decoration: none;
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            &:hover {
+                .box-wrap {
+                    .box-item { transform: translateY(-1px) }
+                    .box-shop { transform: translateY(-1px) }
+                }
+            }
+    
+            .box-wrap {
+                padding: 5rem 0;
+    
+                .box-item {
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    color: $orange;
+                    line-height: 1.6;
+                    letter-spacing: 1px;
+                    text-shadow: 0px 0px 5px #000000;
+                    transform: translateY(3.5rem);
+                    transition: all 0.3s ease-in-out;
+                }
+    
+                .box-shop {
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    color: $blueWhite;
+                    letter-spacing: 1px;
+                    transform: translateY(3.5rem);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    
+        .box-img-1 {
+            background: url('https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/top-box-1.jpg') no-repeat center center; 
+            background-size: cover;
+        }
+    
+        .box-img-2 {
+            background: url('https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/top-box-2.jpg') no-repeat center center; 
+            background-size: cover;
+        }
+    
+        .box-img-3 {
+            background: url('https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/top-box-3.jpg') no-repeat center center; 
+            background-size: cover;
+        }
+    
+        .box-img-4 {
+            background: url('https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/top-box-4.jpg') no-repeat center center; 
+            background-size: cover;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .category-boxes {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .category-boxes {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 4fr;
+    }
+}

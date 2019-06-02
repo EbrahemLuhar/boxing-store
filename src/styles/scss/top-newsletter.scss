@@ -1,0 +1,50 @@
+.landing-newsletter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.2rem 0;
+    background: $yellow;
+
+    p {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $offBlack;
+        padding: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 0.9rem;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 2px;
+        background: $offBlack;
+        color: #ffffff;
+        padding: 10px 20px;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 0px 0px $orange;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+            color: $gray;
+        }
+
+        .fa-long-arrow-alt-right {
+            font-size: 1.5rem;
+            padding-left: 0.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .landing-newsletter {
+        flex-direction: column;
+
+        p {
+            line-height: 1.2;
+        }
+    }
+}
