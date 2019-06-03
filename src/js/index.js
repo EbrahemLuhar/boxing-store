@@ -32,6 +32,7 @@ const navSlide = () => {
     });
 }
 
+// Glider
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.glider'), {
         slidesToShow: 1,
@@ -44,5 +45,31 @@ window.addEventListener('load', function(){
     });
 });
 
+// Landing page modal
+const newsletterModal = () => {
+    const modal = document.querySelector('#mainModal');
+    const modalBtn = document.querySelector('#modalBtn');
+    const closeModal = document.querySelector('.close');
+    const subscribeBtn = document.querySelector('.modal-btn');
+
+    modalBtn.addEventListener('click', () => {
+        modal.style.display = "block";
+    }); 
+    
+    closeModal.addEventListener('click', () => {
+        modal.style.display = "none";
+    }); 
+
+    subscribeBtn.addEventListener('click', () => {
+        modal.style.display = "none";
+    }); 
+    
+    window.addEventListener('click', (event) => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }); 
+}
 
 navSlide();
+newsletterModal();
