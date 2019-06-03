@@ -25,6 +25,11 @@
                     margin: 0.1rem; 
                     padding: 0.3rem; 
                     font-size: 1.3rem;
+                    transition: all 0.1s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.3);
+                    }
                 }
                  
                 .fa-facebook-f {
@@ -67,6 +72,11 @@
                 margin-bottom: 0.2rem;
                 padding: 0.2rem;
                 color: $darkGray;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    color: $blueWhite;
+                }
             }
         }
     
