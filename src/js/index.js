@@ -1,13 +1,12 @@
 import '../../src/styles/scss/main.scss';
 import glider from './glider';
 
+// ***** Toggle mobile nav *****
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.mobile-menu');
     const closeNav = document.querySelector('.fa-times');
     const overlay = document.querySelector('.overlay');
-
-    // Toggle mobile nav
 
     function CloseMobileNav() {
         nav.classList.remove('mobile-nav-slide');
@@ -32,7 +31,7 @@ const navSlide = () => {
     });
 }
 
-// Glider
+// ***** Glider *****
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.glider'), {
         slidesToShow: 1,
@@ -45,7 +44,7 @@ window.addEventListener('load', function(){
     });
 });
 
-// Landing page modal
+// ***** Landing page modal *****
 const newsletterModal = () => {
     const modal = document.querySelector('#mainModal');
     const modalBtn = document.querySelector('#modalBtn');
