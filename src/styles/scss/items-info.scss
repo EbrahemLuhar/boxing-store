@@ -1,0 +1,123 @@
+#item-info {
+    margin-top: 60px;
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: #ffffff;
+
+        .item-info-wrap {
+            padding: 1.5rem;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 600;
+                color: $offBlack;
+                margin-bottom: 1rem;
+                padding: 0.2rem 0;
+            }
+
+            p {
+                font-size: 1.1rem;
+                font-weight: 300;
+                color: $grayBlack;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+#item-products {
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: #ffffff;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+
+        .filter {
+            background: $lightGray;
+            padding: 1.5rem;
+
+            h4 {
+                font-size: 1rem;
+                font-weight: 600;
+                color: $black;
+                letter-spacing: 1px;
+                padding-bottom: 0.5rem;
+            }
+
+            .filter-price, .filter-brand, .filter-size {
+                padding: 1.2rem 0 0.5rem;
+
+                h5 {
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    color: $grayBlack;
+                }
+
+                div {
+                    padding-top: 0.8rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-size: 0.9rem;
+                        margin-bottom: 0.2rem;
+                        padding: 0.2rem;
+                        cursor: pointer;
+                        max-width: 120px;
+                        letter-spacing: 1px;
+                        
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .products {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-top: 3px solid $lightGray;
+
+            .product-options {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                border-bottom: 2px solid $lightGray;
+
+                .search {
+                    background: wheat;
+                }
+
+                .view-options {
+                    display: flex;
+
+                    .breadcrumbs {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #item-info {
+        .container {
+            .item-info-wrap {
+                padding: 1rem;
+                h1 {
+                    font-size: 1.6rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
