@@ -51,7 +51,7 @@
     <section id="item-info">
         <div class="container">
             <div class="item-info-wrap">
-                <h1>BOXING GLOVES</h1>
+                <h1>BOXING GEAR</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione hic velit ullam fuga sequi eum porro accusantium explicabo eveniet deleniti neque ex unde sunt atque veniam minima voluptatem, delectus excepturi.</p>
             </div>
         </div>
@@ -61,6 +61,15 @@
         <div class="container">
             <div class="filter">
                 <h4>FILTER</h4>
+                <div class="filter-product">
+                    <h5>PRODUCTS</h5>
+                    <div id="productFilters">
+                        <span>Boxing Gloves</span>
+                        <span>Boxing Boots</span>
+                        <span>Boxing Protection</span>
+                        <span>Boxing Apparel</span>
+                    </div>
+                </div>
                 <div class="filter-price">
                     <h5>PRICE</h5>
                     <div id="priceFilters">
@@ -75,42 +84,33 @@
                 <div class="filter-brand">
                     <h5>BRAND</h5>
                     <div id="brandFilters">
-                        <span>Adidas</span>
-                        <span>Lonsdale</span>
-                        <span>Everlast</span>
-                        <span>Venum</span>
-                        <span>Rival</span>
-                    </div>
-                </div>
-                <div class="filter-size">
-                    <h5>SIZE</h5>
-                    <div id="gloveSizeFilters">
-                        <span>8oz</span>
-                        <span>10oz</span>
-                        <span>12oz</span>
-                        <span>14oz</span>
-                        <span>16oz</span>
+                        <span class="adidas">Adidas</span>
+                        <span class="lonsdale">Lonsdale</span>
+                        <span class="everlast">Everlast</span>
+                        <span class="nike">Nike</span>
+                        <span class="venum">Venum</span>
+                        <span class="rival">Rival</span>
                     </div>
                 </div>
             </div>
             <div class="products">
                 <div class="product-options">
                     <div class="search">
-                        <input type="search" class="glovesSearch" placeholder="Search boxing gloves">
                         <i class="fas fa-search glovesSearchIcon"></i>
+                        <input type="search" class="glovesSearch" placeholder="Search for ...">
                     </div>
                     <div class="view-options">
-                        <div class="breadcrumbs">
-                            <a href="#">Home</a>
-                            <span>/</span>
-                            <a href="#">Gloves</a>
-                        </div>
                         <div class="sort-by">
                             <span>Sort By:</span>
                             <select name="sortBy" id="sortBy">
                                 <option value="ascPrice">Price: Low to High</option>
                                 <option value="adscPrice">Price: High to Low</option>
                             </select>
+                        </div>
+                        <div class="breadcrumbs">
+                            <a href="#">Home</a>
+                            <span>/</span>
+                            <a href="#">Gloves</a>
                         </div>
                     </div>
                 </div>

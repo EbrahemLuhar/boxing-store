@@ -47,7 +47,7 @@
                 padding-bottom: 0.5rem;
             }
 
-            .filter-price, .filter-brand, .filter-size {
+            .filter-price, .filter-brand, .filter-product {
                 padding: 1.2rem 0 0.5rem;
 
                 h5 {
@@ -62,11 +62,11 @@
                     flex-direction: column;
 
                     span {
-                        font-size: 0.9rem;
+                        font-size: 0.85rem;
                         margin-bottom: 0.2rem;
                         padding: 0.2rem;
                         cursor: pointer;
-                        max-width: 120px;
+                        max-width: 150px;
                         letter-spacing: 1px;
                         
                         &:hover {
@@ -79,7 +79,7 @@
 
         .products {
             background: #ffffff;
-            padding: 1.5rem;
+            padding: 0.2rem 1.2rem;
             border-top: 3px solid $lightGray;
 
             .product-options {
@@ -87,16 +87,81 @@
                 justify-content: space-between;
                 width: 100%;
                 border-bottom: 2px solid $lightGray;
+                padding-bottom: 0.35rem;
 
                 .search {
-                    background: wheat;
+
+                    input[type=search] {
+                        padding: 0.5rem 0;
+                        border: none;
+                        outline: none;
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                        color: $darkGray;
+
+                        &:focus {
+                            outline: none;
+                            
+                        }
+                    }
+
+                    input[type=search]::placeholder {
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                        color: $darkGray;
+                    }
+
+                    .glovesSearchIcon {
+                        color: $darkGray;
+                        padding-right: 0.5rem;
+                    }
                 }
 
                 .view-options {
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .sort-by {
+                        span {
+                            font-size: 0.9rem;
+                            font-weight: 600;
+                            padding-right: 0.4rem;
+                            color: $grayBlack;
+                        }
+
+                        #sortBy {
+                            font-size: 0.85rem;
+                            font-weight: 400;
+                            color: $grayBlack;
+                            padding: 5px;
+                            background: transparent;
+                            border-radius: 0;
+                        }
+                    }
 
                     .breadcrumbs {
-                        margin-right: 1rem;
+                        margin-left: 2rem;
+
+                        a {
+                            text-decoration: none;
+                            font-size: 0.9rem;
+                            font-weight: 600;
+                            color: $grayBlack;
+
+                            &:last-child {
+                                font-weight: 400;
+                                color: $darkGray;
+                            }
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        span {
+                            color: $grayBlack;
+                        }
                     }
                 }
             }
