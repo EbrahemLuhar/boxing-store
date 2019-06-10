@@ -48,6 +48,42 @@
         </div>
     </div>
 
+    <!-- Basket -->
+    <div class="cart showCart">
+        <i class="fas fa-times"></i>
+        <h2>Your Items</h2>
+        <div class="cart-content">
+            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-glove-speed.jpg" alt="basket image">
+            <div class="cart-info">
+                <h4>Adidas Speed 200 Boxing Gloves</h4>
+                <h5>£59.99</h5>
+                <span class="remove-item" data-id="1">remove</span>
+            </div>
+            <div class="cart-up-down">
+                <i class="fas fa-chevron-up" data-id="1"></i>
+                <p class="item-amount">1</p>
+                <i class="fas fa-chevron-down" data-id="1"></i>
+            </div>
+        </div>
+        <div class="cart-content">
+            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-glove-tec.jpg" alt="basket image">
+            <div class="cart-info">
+                <h4>Adidas Hi-Tec Training Boxing Gloves</h4>
+                <h5>£44.99</h5>
+                <span class="remove-item" data-id="2">remove</span>
+            </div>
+            <div class="cart-up-down">
+                <i class="fas fa-chevron-up" data-id="2"></i>
+                <p class="item-amount">1</p>
+                <i class="fas fa-chevron-down" data-id="2"></i>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <h3>Your Total: £<span class="cart-total">0</span></h3>
+            <button class="clear-cart banner-btn">CLEAR CART</button>
+        </div>
+    </div>
+
     <section id="item-info">
         <div class="container">
             <div class="item-info-wrap">
@@ -118,490 +154,808 @@
 
                 <div class="product-listings">
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3021041_2.jpg" 
-                                alt="Adidas Speed 200 Boxing Gloves">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-glove-speed.jpg" 
+                            alt="Adidas Speed 200 Boxing Gloves">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>SPEED 200 BOXING GLOVES</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Adidas</h3>
-                                <div class="item-info">
-                                    <p>SPEED 200 BOXING GLOVES</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£69.99</del></span>
-                                    <span class="sale-price">£59.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£69.99</del></span>
+                                <span class="sale-price">£59.99</span>
                             </div>
-                        </a>
+                            <button class="basket-btn" data-id="1">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to cart
+                            </button>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3017018.jpg" 
-                                alt="ADIDAS HI-TEC TRAINING BOXING GLOVES">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-glove-tec.jpg" 
+                            alt="ADIDAS HI-TEC TRAINING BOXING GLOVES">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>HI-TEC TRAINING BOXING GLOVES</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Adidas</h3>
-                                <div class="item-info">
-                                    <p>HI-TEC TRAINING BOXING GLOVES</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£59.99</del></span>
-                                    <span class="sale-price">£44.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£59.99</del></span>
+                                <span class="sale-price">£44.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3021038.jpg" 
-                                alt="ADIDAS HYBRID 300X GLOVES">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-glove-hybrid.jpg" 
+                            alt="ADIDAS HYBRID 300X GLOVES">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>HYBRID 300X GLOVES</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Adidas</h3>
-                                <div class="item-info">
-                                    <p>HYBRID 300X GLOVES</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£99.99</del></span>
-                                    <span class="sale-price">£89.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£99.99</del></span>
+                                <span class="sale-price">£89.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3015780_1.jpg" 
-                                alt="ADIDAS TRAINING BOXING GLOVE">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-glove-train.jpg" 
+                            alt="ADIDAS TRAINING BOXING GLOVE">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>TRAINING BOXING GLOVE</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Adidas</h3>
-                                <div class="item-info">
-                                    <p>TRAINING BOXING GLOVE</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£34.99</del></span>
-                                    <span class="sale-price">£24.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£34.99</del></span>
+                                <span class="sale-price">£24.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21021734.jpg" 
-                                alt="LONSDALE AMATEUR TRAINING GLOVE">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-glove-amateur.jpg" 
+                            alt="LONSDALE AMATEUR TRAINING GLOVE">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>LONSDALE AMATEUR TRAINING GLOVE</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Lonsdale</h3>
-                                <div class="item-info">
-                                    <p>LONSDALE AMATEUR TRAINING GLOVE</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£64.99</del></span>
-                                    <span class="sale-price">£59.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£64.99</del></span>
+                                <span class="sale-price">£59.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21021684.jpg" 
-                                alt="LONSDALE CLUB TRAINING GLOVE">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-glove-club.jpg" 
+                            alt="LONSDALE CLUB TRAINING GLOVE">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>CLUB TRAINING GLOVE</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Lonsdale</h3>
-                                <div class="item-info">
-                                    <p>CLUB TRAINING GLOVE</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£39.99</del></span>
-                                    <span class="sale-price">£29.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£39.99</del></span>
+                                <span class="sale-price">£29.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21021594.jpg" 
-                                alt="LONSDALE LION SPAR TRAINING GLOVE">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-glove-spar.jpg" 
+                            alt="LONSDALE LION SPAR TRAINING GLOVE">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>LION SPAR TRAINING GLOVE</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Lonsdale</h3>
-                                <div class="item-info">
-                                    <p>LION SPAR TRAINING GLOVE</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£64.99</del></span>
-                                    <span class="sale-price">£59.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£64.99</del></span>
+                                <span class="sale-price">£59.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21020240_1.jpg" 
-                                alt="LONSDALE VINTAGE LEATHER TRAINING GLOVE">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-glove-vintage.jpg" 
+                            alt="LONSDALE VINTAGE LEATHER TRAINING GLOVE">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>VINTAGE LEATHER TRAINING GLOVE</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Lonsdale</h3>
-                                <div class="item-info">
-                                    <p>VINTAGE LEATHER TRAINING GLOVE</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£129.99</del></span>
-                                    <span class="sale-price">£109.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£129.99</del></span>
+                                <span class="sale-price">£109.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21012209_62.jpg" 
-                                alt="RIVAL RS4 CLASSIC SPARRING GLOVE">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-rival-glove-rs4.jpg" 
+                            alt="RIVAL RS4 CLASSIC SPARRING GLOVE">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Rival</h3>
+                            <div class="item-info">
+                                <p>RS4 CLASSIC SPARRING GLOVE</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Rival</h3>
-                                <div class="item-info">
-                                    <p>RS4 CLASSIC SPARRING GLOVE</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£129.99</del></span>
-                                    <span class="sale-price">£99.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£129.99</del></span>
+                                <span class="sale-price">£99.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21012201.jpg" 
-                                alt="RIVAL RB7 FITNESS PLUS BAG GLOVES">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-rival-glove-rb7.jpg" 
+                            alt="RIVAL RB7 FITNESS PLUS BAG GLOVES">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Rival</h3>
+                            <div class="item-info">
+                                <p>RB7 FITNESS PLUS BAG GLOVES</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Rival</h3>
-                                <div class="item-info">
-                                    <p>RB7 FITNESS PLUS BAG GLOVES</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£89.99</del></span>
-                                    <span class="sale-price">£69.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£89.99</del></span>
+                                <span class="sale-price">£69.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21012258_1.jpg" 
-                                alt="RIVAL RS1-PRO SPARRING GLOVES">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-rival-glove-rs1.jpg" 
+                            alt="RIVAL RS1-PRO SPARRING GLOVES">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Rival</h3>
+                            <div class="item-info">
+                                <p>RS1-PRO SPARRING GLOVES</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Rival</h3>
-                                <div class="item-info">
-                                    <p>RS1-PRO SPARRING GLOVES</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£149.99</del></span>
-                                    <span class="sale-price">£139.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£149.99</del></span>
+                                <span class="sale-price">£139.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21024473.jpg" 
-                                alt="RIVAL RS100 PROFESSIONAL SPARRING GLOVES">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-rival-glove-rs100.jpg" 
+                            alt="RIVAL RS100 PROFESSIONAL SPARRING GLOVES">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Rival</h3>
+                            <div class="item-info">
+                                <p>RS100 PROFESSIONAL SPARRING GLOVES</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Rival</h3>
-                                <div class="item-info">
-                                    <p>RS100 PROFESSIONAL SPARRING GLOVES</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£199.99</del></span>
-                                    <span class="sale-price">£169.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£199.99</del></span>
+                                <span class="sale-price">£169.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21008497.jpg" 
-                                alt="VENUM GIANT 3.0 BOXING GLOVES">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-venum-glove-giant.jpg" 
+                            alt="VENUM GIANT 3.0 BOXING GLOVES">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Venum</h3>
+                            <div class="item-info">
+                                <p>GIANT 3.0 BOXING GLOVES</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Venum</h3>
-                                <div class="item-info">
-                                    <p>GIANT 3.0 BOXING GLOVES</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£104.99</del></span>
-                                    <span class="sale-price">£89.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£104.99</del></span>
+                                <span class="sale-price">£89.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21001088.jpg" 
-                                alt="VENUM ELITE ADULT BOXING GLOVES">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-venum-glove-elite.jpg" 
+                            alt="VENUM ELITE ADULT BOXING GLOVES">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Venum</h3>
+                            <div class="item-info">
+                                <p>ELITE ADULT BOXING GLOVES</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Venum</h3>
-                                <div class="item-info">
-                                    <p>ELITE ADULT BOXING GLOVES</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£84.99</del></span>
-                                    <span class="sale-price">£49.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£84.99</del></span>
+                                <span class="sale-price">£49.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21008752_1.jpg" 
-                                alt="VENUM NEON 2.0 BOXING GLOVES">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-venum-glove-neon.jpg" 
+                            alt="VENUM NEON 2.0 BOXING GLOVES">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Venum</h3>
+                            <div class="item-info">
+                                <p>NEON 2.0 BOXING GLOVES</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Venum</h3>
-                                <div class="item-info">
-                                    <p>NEON 2.0 BOXING GLOVES</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£69.99</del></span>
-                                    <span class="sale-price">£54.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£69.99</del></span>
+                                <span class="sale-price">£54.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21001104_1.jpg" 
-                                alt="VENUM CHALLENGER 2.0 BOXING GLOVES">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-venum-glove-challenger.jpg" 
+                            alt="VENUM CHALLENGER 2.0 BOXING GLOVES">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Venum</h3>
+                            <div class="item-info">
+                                <p>CHALLENGER 2.0 BOXING GLOVES</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Venum</h3>
-                                <div class="item-info">
-                                    <p>CHALLENGER 2.0 BOXING GLOVES</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£59.99</del></span>
-                                    <span class="sale-price">£39.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£59.99</del></span>
+                                <span class="sale-price">£39.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3020837_1.jpg" 
-                                alt="ADIDAS COMBAT SPEED 5.0">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-boot-combat.jpg" 
+                            alt="ADIDAS COMBAT SPEED 5.0">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>COMBAT SPEED 5.0</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Adidas</h3>
-                                <div class="item-info">
-                                    <p>COMBAT SPEED 5.0</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£79.99</del></span>
-                                    <span class="sale-price">£59.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£79.99</del></span>
+                                <span class="sale-price">£59.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21020323_1.jpg" 
-                                alt="ADIDAS SPEEDEX 18 BOXING BOOTS">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-boot-speed18.jpg" 
+                            alt="ADIDAS SPEEDEX 18 BOXING BOOTS">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>SPEEDEX 18 BOXING BOOTS</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Adidas</h3>
-                                <div class="item-info">
-                                    <p>SPEEDEX 18 BOXING BOOTS</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£139.99</del></span>
-                                    <span class="sale-price">£129.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£139.99</del></span>
+                                <span class="sale-price">£129.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21011513.jpg" 
-                                alt="ADIDAS SPEEDEX 16.1 BOOST BOXING BOOTS">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-boot-speed-16.jpg" 
+                            alt="ADIDAS SPEEDEX 16.1 BOOST BOXING BOOTS">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>SPEEDEX 16.1 BOOST BOXING BOOTS</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Adidas</h3>
-                                <div class="item-info">
-                                    <p>SPEEDEX 16.1 BOOST BOXING BOOTS</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£129.99</del></span>
-                                    <span class="sale-price">£109.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£129.99</del></span>
+                                <span class="sale-price">£109.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21006837_1.jpg" 
-                                alt="NIKE FREE HYPERKO SHIELD TRAINER">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-boot-free.jpg" 
+                            alt="NIKE FREE HYPERKO SHIELD TRAINER">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Nike</h3>
+                            <div class="item-info">
+                                <p>FREE HYPERKO SHIELD TRAINER</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Nike</h3>
-                                <div class="item-info">
-                                    <p>FREE HYPERKO SHIELD TRAINER</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£169.99</del></span>
-                                    <span class="sale-price">£139.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£169.99</del></span>
+                                <span class="sale-price">£139.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21013963_1.jpg" 
-                                alt="NIKE KO BOXING BOOTS">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-boot-ko.jpg" 
+                            alt="NIKE KO BOXING BOOTS">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Nike</h3>
+                            <div class="item-info">
+                                <p>KO BOXING BOOTS</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Nike</h3>
-                                <div class="item-info">
-                                    <p>KO BOXING BOOTS</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£129.99</del></span>
-                                    <span class="sale-price">£104.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£129.99</del></span>
+                                <span class="sale-price">£104.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21014117.jpg" 
-                                alt="NIKE HYPER KO BOXING BOOTS">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-boot-hyperko.jpg" 
+                            alt="NIKE HYPER KO BOXING BOOTS">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Nike</h3>
+                            <div class="item-info">
+                                <p>HYPER KO BOXING BOOTS </p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Nike</h3>
-                                <div class="item-info">
-                                    <p>HYPER KO BOXING BOOTS </p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£159.99</del></span>
-                                    <span class="sale-price">£129.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£159.99</del></span>
+                                <span class="sale-price">£129.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3010153_1.jpg" 
-                                alt="NIKE OLY HI BOXING BOOT">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-boot-hi.jpg" 
+                            alt="NIKE OLY HI BOXING BOOT">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Nike</h3>
+                            <div class="item-info">
+                                <p>OLY HI BOXING BOOT</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Nike</h3>
-                                <div class="item-info">
-                                    <p>OLY HI BOXING BOOT</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£149.99</del></span>
-                                    <span class="sale-price">£119.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£149.99</del></span>
+                                <span class="sale-price">£119.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21013952_2.jpg" 
-                                alt="NIKE OLY MID BOXING BOOT">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-boot-mid.jpg" 
+                            alt="NIKE OLY MID BOXING BOOT">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Nike</h3>
+                            <div class="item-info">
+                                <p>OLY MID BOXING BOOT</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Nike</h3>
-                                <div class="item-info">
-                                    <p>OLY MID BOXING BOOT</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£119.99</del></span>
-                                    <span class="sale-price">£89.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£119.99</del></span>
+                                <span class="sale-price">£89.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21021925.jpg" 
-                                alt="REEBOK BOXING BOOT">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-reebok-boot-boxing.jpg" 
+                            alt="REEBOK BOXING BOOT">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Reebok</h3>
+                            <div class="item-info">
+                                <p>BOXING BOOT</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Reebok</h3>
-                                <div class="item-info">
-                                    <p>BOXING BOOT</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£49.99</del></span>
-                                    <span class="sale-price">£39.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£49.99</del></span>
+                                <span class="sale-price">£39.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21023562.jpg" 
-                                alt="REEBOK FLEXWEAVE® BOXING BOOT">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-reebok-boot-flex.jpg" 
+                            alt="REEBOK FLEXWEAVE BOXING BOOT">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Reebok</h3>
+                            <div class="item-info">
+                                <p>FLEXWEAVE BOXING BOOT</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Reebok</h3>
-                                <div class="item-info">
-                                    <p>FLEXWEAVE BOXING BOOT</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£79.99</del></span>
-                                    <span class="sale-price">£59.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£79.99</del></span>
+                                <span class="sale-price">£59.99</span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#">
-                            <div class="item-img-wrap">
-                                <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21024479.jpg" 
-                                alt="REEBOK ZOD BOXING BOOT">
+                        <div class="item-img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-reebok-boot-zod.jpg" 
+                            alt="REEBOK ZOD BOXING BOOT">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Reebok</h3>
+                            <div class="item-info">
+                                <p>ZOD BOXING BOOT</p>
                             </div>
-                            <div class="item-text-wrap">
-                                <h3>Reebok</h3>
-                                <div class="item-info">
-                                    <p>ZOD BOXING BOOT</p>
-                                </div>
-                                <div class="item-price">
-                                    <span class="old-price"><del>£99.99</del></span>
-                                    <span class="sale-price">£74.99</span>
-                                </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£99.99</del></span>
+                                <span class="sale-price">£74.99</span>
                             </div>
-                        </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3015676_2.jpg" 
+                            alt="ADIDAS AIBA BOXING HEADGUARD">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>AIBA BOXING HEADGUARD</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£89.99</del></span>
+                                <span class="sale-price">£64.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21007265.jpg" 
+                            alt="ADIDAS ADIZERO SPEED HEADGUARD">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>ADIZERO SPEED HEADGUARD</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£69.99</del></span>
+                                <span class="sale-price">£49.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3019610.jpg" 
+                            alt="ADIDAS RESPONSE HEAD GUARD">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>RESPONSE HEAD GUARD</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£74.99</del></span>
+                                <span class="sale-price">£69.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21021738.jpg" 
+                            alt="LONSDALE AMATEUR TRAINING HEAD GUARD">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>AMATEUR TRAINING HEAD GUARD</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£44.99</del></span>
+                                <span class="sale-price">£29.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21021511.jpg" 
+                            alt="LONSDALE L60 LIGHT HEAD GUARD WITH CHEEK">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>L60 LIGHT HEAD GUARD WITH CHEEK</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£59.99</del></span>
+                                <span class="sale-price">£44.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21021507.jpg" 
+                            alt="LONSDALE L60 FACE-SAVER LEATHER HEAD GUARD">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>L60 FACE-SAVER LEATHER HEAD GUARD</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£79.99</del></span>
+                                <span class="sale-price">£69.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21022188.jpg" 
+                            alt="LONSDALE VINTAGE LEATHER HEAD GUARD">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>VINTAGE LEATHER HEAD GUARD</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£129.99</del></span>
+                                <span class="sale-price">£109.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21012245.jpg" 
+                            alt="RIVAL RHG2 TRAINING HEADGUARD">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Rival</h3>
+                            <div class="item-info">
+                                <p>RHG2 TRAINING HEADGUARD</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£99.99</del></span>
+                                <span class="sale-price">£89.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21012238_1.jpg" 
+                            alt="RIVAL RHG30 TRAINING HEADGUARD">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Rival</h3>
+                            <div class="item-info">
+                                <p>RHG30 TRAINING HEADGUARD</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£129.99</del></span>
+                                <span class="sale-price">£109.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21002121.jpg" 
+                            alt="ADIDAS DOUBLE MOUTHGUARD">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>DOUBLE MOUTHGUARD</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£9.99</del></span>
+                                <span class="sale-price">£6.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3016523_12.jpg" 
+                            alt="NIKE INTAKE MOUTHGUARD">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Nike</h3>
+                            <div class="item-info">
+                                <p>INTAKE MOUTHGUARD</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£19.99</del></span>
+                                <span class="sale-price">£9.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3020930_4.jpg" 
+                            alt="ADIDAS POLY SATIN BOXING SHORT">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>POLY SATIN BOXING SHORT</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£29.99</del></span>
+                                <span class="sale-price">£19.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21011058.jpg" 
+                            alt="ADIDAS BASE PUNCH II SHORTS">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>BASE PUNCH II SHORTS</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£39.99</del></span>
+                                <span class="sale-price">£29.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3018806.jpg" 
+                            alt="ADIDAS DIAMOND FLEX BOXING SHORTS">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>DIAMOND FLEX BOXING SHORTS</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£19.99</del></span>
+                                <span class="sale-price">£9.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/1/2/12001020.jpg" 
+                            alt="LONSDALE LARGE LOGO AND BRAID TASSLE SHORT">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>LARGE LOGO TASSLE SHORT</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£29.99</del></span>
+                                <span class="sale-price">£24.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21020674.jpg" 
+                            alt="LONSDALE PERFORMANCE BOXING RING WEAR SHORTS">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>PERFORMANCE BOXING SHORTS</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£29.99</del></span>
+                                <span class="sale-price">£19.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21012004_1.jpg" 
+                            alt="NIKE II BOXING SHORTS">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Nike</h3>
+                            <div class="item-info">
+                                <p>II BOXING SHORTS</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£49.99</del></span>
+                                <span class="sale-price">£34.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21009012.jpg" 
+                            alt="ADIDAS T16 CLIMACOOL SLEEVELESS TEE">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>T16 CLIMACOOL SLEEVELESS TEE</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£19.99</del></span>
+                                <span class="sale-price">£14.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3018837.jpg" 
+                            alt="ADIDAS DIAMOND FLEX BOXING VEST">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Adidas</h3>
+                            <div class="item-info">
+                                <p>DIAMOND FLEX BOXING VEST</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£29.99</del></span>
+                                <span class="sale-price">£24.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21020677.jpg" 
+                            alt="LONSDALE PERFORMANCE BOXING RING WEAR VEST">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>PERFORMANCE BOXING VEST</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£19.99</del></span>
+                                <span class="sale-price">£14.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/0/3008577.jpg" 
+                            alt="LONSDALE CLUB BOXING VEST">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Lonsdale</h3>
+                            <div class="item-info">
+                                <p>CLUB BOXING VEST</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£14.99</del></span>
+                                <span class="sale-price">£9.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21011998_1.jpg" 
+                            alt="NIKE II BOXING VEST">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Nike</h3>
+                            <div class="item-info">
+                                <p>II BOXING VEST</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£39.99</del></span>
+                                <span class="sale-price">£29.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img-wrap">
+                            <img src="https://www.boxfituk.com/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/2/1/21004459.jpg" 
+                            alt="NIKE BOXING TANK">
+                        </div>
+                        <div class="item-text-wrap">
+                            <h3>Nike</h3>
+                            <div class="item-info">
+                                <p>BOXING TANK</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="old-price"><del>£29.99</del></span>
+                                <span class="sale-price">£19.99</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,7 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.mobile-menu');
     const closeNav = document.querySelector('.fa-times');
+    const mobileLinks = document.querySelector('.mobile-menu-container a');
     const overlay = document.querySelector('.overlay');
 
     function CloseMobileNav() {
@@ -22,6 +23,10 @@ const navSlide = () => {
         OpenMobileNav();
     });
 
+    closeNav.addEventListener('click', () => {
+        CloseMobileNav();
+    });
+    
     closeNav.addEventListener('click', () => {
         CloseMobileNav();
     });
