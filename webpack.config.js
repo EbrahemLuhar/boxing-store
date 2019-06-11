@@ -20,7 +20,7 @@ module.exports = {
             template: './src/index.html'
         }),
         new HtmlWebpackPlugin({
-            filename: 'index.html',
+            filename: 'gloves.html',
             template: './src/gloves.html'
             
         }),
