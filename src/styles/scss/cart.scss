@@ -12,6 +12,7 @@
     color: white;
     // transform: translateX(100%);
     transition: all 0.2s ease-in-out;
+    overflow-y: scroll;
 
     .fa-times {
         display: block;
@@ -77,6 +78,7 @@
         }
 
         .cart-up-down {
+            text-align: center;
             .item-amount {
                 text-align: center;
                 line-height: 1.5;
@@ -92,6 +94,7 @@
 
     .cart-footer {
         margin-top: 2rem;
+        margin-bottom: 2rem;
         font-size: 1.4rem;
         font-weight: 600;
         letter-spacing: 2px;
@@ -129,5 +132,6 @@
 @media only screen and (max-width: 767px) {
     .cart {
         width: 100vw;
+        min-width: 0;
     }
 }
