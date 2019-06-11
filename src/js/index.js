@@ -27,7 +27,7 @@ const navSlide = () => {
         CloseMobileNav();
     });
     
-    closeNav.addEventListener('click', () => {
+    mobileLinks.addEventListener('click', () => {
         CloseMobileNav();
     });
 
@@ -50,30 +50,66 @@ window.addEventListener('load', function(){
 });
 
 // ***** Landing page modal *****
-const newsletterModal = () => {
-    const modal = document.querySelector('#mainModal');
-    const modalBtn = document.querySelector('#modalBtn');
-    const closeModal = document.querySelector('.close');
-    const subscribeBtn = document.querySelector('.modal-btn');
+// const newsletterModal = () => {
+//     const modal = document.querySelector('#mainModal');
+//     const modalBtn = document.querySelector('#modalBtn');
+//     const closeModal = document.querySelector('.close');
+//     const subscribeBtn = document.querySelector('.modal-btn');
 
-    modalBtn.addEventListener('click', () => {
-        modal.style.display = "block";
-    }); 
+//     modalBtn.addEventListener('click', () => {
+//         modal.style.display = "block";
+//     }); 
     
-    closeModal.addEventListener('click', () => {
-        modal.style.display = "none";
-    }); 
+//     closeModal.addEventListener('click', () => {
+//         modal.style.display = "none";
+//     }); 
 
-    subscribeBtn.addEventListener('click', () => {
-        modal.style.display = "none";
-    }); 
+//     subscribeBtn.addEventListener('click', () => {
+//         modal.style.display = "none";
+//     }); 
     
-    window.addEventListener('click', (event) => {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }); 
+//     window.addEventListener('click', (event) => {
+//         if (event.target == modal) {
+//             modal.style.display = "none";
+//         }
+//     }); 
+// }
+
+// ***** Basket Open Close Toggle *****
+const toggleBasket = () => {
+    const basket = document.querySelector('.fa-shopping-basket');
+    const cart = document.querySelector('.cart');
+    const closeCart = document.querySelector('.close-basket');
+    const basketNum = document.querySelector('.basket-num');
+    const overlay = document.querySelector('.overlay');
+
+    function OpenBasket() {
+        cart.style.transform = "translateX(0)";
+        overlay.classList.add('overlay-active');
+    }
+
+    function CloseBasket() {
+        cart.style.transform = "translateX(100%)";
+        overlay.classList.remove('overlay-active');
+    }
+
+    basket.addEventListener('click', () => {
+        OpenBasket();
+    });
+
+    basketNum.addEventListener('click', () => {
+        OpenBasket();
+    });
+
+    closeCart.addEventListener('click', () => {
+        CloseBasket();
+    });
+
+    overlay.addEventListener('click', () => {
+        CloseBasket();
+    });
 }
 
 navSlide();
-newsletterModal();
+// newsletterModal();
+toggleBasket();
