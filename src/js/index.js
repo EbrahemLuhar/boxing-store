@@ -1,6 +1,28 @@
 import '../../src/styles/scss/main.scss';
 import glider from './glider';
 
+let cart = [];
+
+// ***** Get the products from contentful *****
+class GetProducts {
+
+}
+
+// ***** Display the product to UI *****
+class UI {
+
+}
+
+// ***** Work with local storage *****
+class Storage {
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const ui = new UI();
+    const products = new GetProducts();
+});
+
 // ***** Toggle mobile nav *****
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -89,8 +111,6 @@ const glide = () => {
         });
     }
 }
-
-
 
 // ***** Landing page modal *****
 const newsletterModal = () => {
