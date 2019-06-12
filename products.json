@@ -1,0 +1,554 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Adidas",
+        "model": "Speed 200 Boxing Gloves",
+        "oldPrice": 69.99,
+        "newPrice": 59.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-glove-speed.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Adidas",
+        "model": "Hi-Tec Training Boxing Gloves",
+        "oldPrice": 59.99,
+        "newPrice": 49.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-glove-tec.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Adidas",
+        "model": "Hybrid 300X Gloves",
+        "oldPrice": 99.99,
+        "newPrice": 89.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-glove-hybrid.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Adidas",
+        "model": "Training Boxing Gloves",
+        "oldPrice": 34.99,
+        "newPrice": 24.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-glove-train.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Lonsdale",
+        "model": "Amateur Training Gloves",
+        "oldPrice": 64.99,
+        "newPrice": 59.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-glove-amateur.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Lonsdale",
+        "model": "Club Training Gloves",
+        "oldPrice": 39.99,
+        "newPrice": 29.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-glove-club.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Lonsdale",
+        "model": "Lion Spar Training Gloves",
+        "oldPrice": 59.99,
+        "newPrice": 54.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-glove-spar.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Lonsdale",
+        "model": "Vintage Leather Training Gloves",
+        "oldPrice": 129.99,
+        "newPrice": 109.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-glove-vintage.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Rival",
+        "model": "RS4 Classic Sparring Glove",
+        "oldPrice": 129.99,
+        "newPrice": 99.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-rival-glove-rs4.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "10" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Rival",
+        "model": "RB7 Fitness Plus Bag Gloves",
+        "oldPrice": 89.99,
+        "newPrice": 69.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-rival-glove-rb7.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "11" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Rival",
+        "model": "RS1-PRO Sparring Gloves",
+        "oldPrice": 149.99,
+        "newPrice": 139.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-rival-glove-rs1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "12" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Rival",
+        "model": "RS100 Professional Sparring Gloves",
+        "oldPrice": 199.99,
+        "newPrice": 169.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-rival-glove-rs100.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "13" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Venum",
+        "model": "Giant 3.0 Boxing Gloves",
+        "oldPrice": 104.99,
+        "newPrice": 89.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-venum-glove-giant.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "14" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Venum",
+        "model": "Elite Adult Boxing Gloves",
+        "oldPrice": 84.99,
+        "newPrice": 59.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-venum-glove-elite.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "15" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Venum",
+        "model": "Neon 2.0 Boxing Gloves",
+        "oldPrice": 69.99,
+        "newPrice": 54.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-venum-glove-neon.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "16" },
+      "fields": {
+        "type": "gloves",
+        "brand": "Venum",
+        "model": "Challenger 2.0 Boxing Gloves",
+        "oldPrice": 59.99,
+        "newPrice": 39.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-venum-glove-challenger.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "17" },
+      "fields": {
+        "type": "boots",
+        "brand": "Adidas",
+        "model": "Combat Speed 5.0 Boxing Boots",
+        "oldPrice": 79.99,
+        "newPrice": 59.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-boot-combat.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "18" },
+      "fields": {
+        "type": "boots",
+        "brand": "Adidas",
+        "model": "Speedex 18 Boxing Boots",
+        "oldPrice": 139.99,
+        "newPrice": 129.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-boot-speed18.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "19" },
+      "fields": {
+        "type": "boots",
+        "brand": "Adidas",
+        "model": "Speedex 16.1 Boost Boxing Boots",
+        "oldPrice": 129.99,
+        "newPrice": 109.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-boot-speed-16.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "20" },
+      "fields": {
+        "type": "boots",
+        "brand": "Nike",
+        "model": "Free HyperKO Shield Trainer",
+        "oldPrice": 169.99,
+        "newPrice": 139.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-boot-free.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "21" },
+      "fields": {
+        "type": "boots",
+        "brand": "Nike",
+        "model": "KO Boxing Boots",
+        "oldPrice": 129.99,
+        "newPrice": 104.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-boot-ko.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "22" },
+      "fields": {
+        "type": "boots",
+        "brand": "Nike",
+        "model": "Hyper KO Boxing Boots",
+        "oldPrice": 159.99,
+        "newPrice": 129.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-boot-hyperko.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "23" },
+      "fields": {
+        "type": "boots",
+        "brand": "Nike",
+        "model": "Oly Hi Boxing Boots",
+        "oldPrice": 149.99,
+        "newPrice": 119.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-boot-hi.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "24" },
+      "fields": {
+        "type": "boots",
+        "brand": "Nike",
+        "model": "Oly Mid Boxing Boots",
+        "oldPrice": 119.99,
+        "newPrice": 89.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-boot-mid.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "25" },
+      "fields": {
+        "type": "boots",
+        "brand": "Reebok",
+        "model": "Boxing Boots",
+        "oldPrice": 49.99,
+        "newPrice": 39.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-reebok-boot-boxing.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "26" },
+      "fields": {
+        "type": "boots",
+        "brand": "Reebok",
+        "model": "FlexWeave Boxing Boots",
+        "oldPrice": 79.99,
+        "newPrice": 59.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-reebok-boot-flex.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "27" },
+      "fields": {
+        "type": "boots",
+        "brand": "Reebok",
+        "model": "Zod Boxing Boots",
+        "oldPrice": 99.99,
+        "newPrice": 74.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-reebok-boot-zod.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "28" },
+      "fields": {
+        "type": "headguard",
+        "brand": "Adidas",
+        "model": "AIBA Boxing Headguard",
+        "oldPrice": 89.99,
+        "newPrice": 64.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-headguard-aiba.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "29" },
+      "fields": {
+        "type": "headguard",
+        "brand": "Adidas",
+        "model": "Adizero Speed Headguard",
+        "oldPrice": 69.99,
+        "newPrice": 49.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-headguard-adizero.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "30" },
+      "fields": {
+        "type": "headguard",
+        "brand": "Adidas",
+        "model": "Response Headguard",
+        "oldPrice": 74.99,
+        "newPrice": 69.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-headguard-response.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "31" },
+      "fields": {
+        "type": "headguard",
+        "brand": "Lonsdale",
+        "model": "Amateur Training Headguard",
+        "oldPrice": 44.99,
+        "newPrice": 29.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-headguard-amateur.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "32" },
+      "fields": {
+        "type": "headguard",
+        "brand": "Lonsdale",
+        "model": "L60 Light Headguard With Cheek",
+        "oldPrice": 59.99,
+        "newPrice": 44.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-headguard-l60.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "33" },
+      "fields": {
+        "type": "headguard",
+        "brand": "Lonsdale",
+        "model": "L60 Face-Saver Leather Headguard",
+        "oldPrice": 79.99,
+        "newPrice": 69.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-headguard-l60face.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "34" },
+      "fields": {
+        "type": "headguard",
+        "brand": "Lonsdale",
+        "model": "Vintage Leather Leather Headguard",
+        "oldPrice": 129.99,
+        "newPrice": 109.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-headguard-vintage.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "35" },
+      "fields": {
+        "type": "headguard",
+        "brand": "Rival",
+        "model": "RHG2 Training Headguard",
+        "oldPrice": 99.99,
+        "newPrice": 89.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-rival-headguard-rhg2.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "36" },
+      "fields": {
+        "type": "headguard",
+        "brand": "Rival",
+        "model": "RHG30 Training Headguard",
+        "oldPrice": 129.99,
+        "newPrice": 109.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-rival-headguard-rhg30.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "37" },
+      "fields": {
+        "type": "mouthguard",
+        "brand": "Adidas",
+        "model": "Double Mouthguard",
+        "oldPrice": 9.99,
+        "newPrice": 6.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-mouthguard-double.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "38" },
+      "fields": {
+        "type": "mouthguard",
+        "brand": "Nike",
+        "model": "Intake Mouthguard",
+        "oldPrice": 19.99,
+        "newPrice": 9.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-mouthguard-intake.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "39" },
+      "fields": {
+        "type": "shorts",
+        "brand": "Adidas",
+        "model": "Poly Satin Boxing Shorts",
+        "oldPrice": 29.99,
+        "newPrice": 19.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-shorts-satin.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "40" },
+      "fields": {
+        "type": "shorts",
+        "brand": "Adidas",
+        "model": "Base Punch II Boxing Shorts",
+        "oldPrice": 39.99,
+        "newPrice": 29.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-shorts-base.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "41" },
+      "fields": {
+        "type": "shorts",
+        "brand": "Adidas",
+        "model": "Diamond Flex Boxing Shorts",
+        "oldPrice": 19.99,
+        "newPrice": 9.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-shorts-flex.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "42" },
+      "fields": {
+        "type": "shorts",
+        "brand": "Lonsdale",
+        "model": "Large Logo Tassle Shorts",
+        "oldPrice": 29.99,
+        "newPrice": 24.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-shorts-logo.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "43" },
+      "fields": {
+        "type": "shorts",
+        "brand": "Lonsdale",
+        "model": "Performance Boxing Shorts",
+        "oldPrice": 29.99,
+        "newPrice": 19.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-shorts-performance.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "44" },
+      "fields": {
+        "type": "shorts",
+        "brand": "Nike",
+        "model": "II Boxing Short",
+        "oldPrice": 49.99,
+        "newPrice": 34.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-shorts-ii.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "45" },
+      "fields": {
+        "type": "vests",
+        "brand": "Adidas",
+        "model": "T16 Climacool Sleeveless Tee",
+        "oldPrice": 19.99,
+        "newPrice": 14.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-tee-t16.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "46" },
+      "fields": {
+        "type": "vests",
+        "brand": "Adidas",
+        "model": "Diamond Flex Boxing Vest",
+        "oldPrice": 29.99,
+        "newPrice": 24.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-adidas-tee-flex.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "47" },
+      "fields": {
+        "type": "vests",
+        "brand": "Lonsdale",
+        "model": "Performance Boxing Vest",
+        "oldPrice": 19.99,
+        "newPrice": 14.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-tee-performance.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "48" },
+      "fields": {
+        "type": "vests",
+        "brand": "Lonsdale",
+        "model": "Club Boxing Vest",
+        "oldPrice": 14.99,
+        "newPrice": 9.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-lonsdale-tee-club.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "49" },
+      "fields": {
+        "type": "vests",
+        "brand": "Nike",
+        "model": "II Boxing Vest",
+        "oldPrice": 39.99,
+        "newPrice": 29.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-tee-ii.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "50" },
+      "fields": {
+        "type": "vests",
+        "brand": "Nike",
+        "model": "Boxing Tank",
+        "oldPrice": 29.99,
+        "newPrice": 19.99,
+        "image": { "fields": { "file": { "url": "https://raw.githubusercontent.com/EbrahemLuhar/minified-boxing-images/master/prod-nike-tee-tank.jpg" } } }
+      }
+    }
+  ]
+}
