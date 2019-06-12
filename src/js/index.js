@@ -36,45 +36,6 @@ const navSlide = () => {
     });
 }
 
-// ***** Glider *****
-window.addEventListener('load', function(){
-    new Glider(document.querySelector('.glider'), {
-        slidesToShow: 1,
-        dots: '#dots',
-        draggable: false,
-        arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
-        }
-    });
-});
-
-// ***** Landing page modal *****
-const newsletterModal = () => {
-    const modal = document.querySelector('#mainModal');
-    const modalBtn = document.querySelector('#modalBtn');
-    const closeModal = document.querySelector('.close');
-    const subscribeBtn = document.querySelector('.modal-btn');
-
-    modalBtn.addEventListener('click', () => {
-        modal.style.display = "block";
-    }); 
-    
-    closeModal.addEventListener('click', () => {
-        modal.style.display = "none";
-    }); 
-
-    subscribeBtn.addEventListener('click', () => {
-        modal.style.display = "none";
-    }); 
-    
-    window.addEventListener('click', (event) => {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }); 
-}
-
 // ***** Basket Open Close Toggle *****
 const toggleBasket = () => {
     const basket = document.querySelector('.fa-shopping-basket');
@@ -110,6 +71,57 @@ const toggleBasket = () => {
     });
 }
 
+// ***** Glider *****
+const glide = () => {
+    const body = document.querySelector('body');
+    const glider = document.querySelector('.glider-wrap');
+    if (body.contains(glider)) {
+        window.addEventListener('load', function(){
+            new Glider(document.querySelector('.glider'), {
+                slidesToShow: 1,
+                dots: '#dots',
+                draggable: false,
+                arrows: {
+                    prev: '.glider-prev',
+                    next: '.glider-next'
+                }
+            });
+        });
+    }
+}
+
+
+
+// ***** Landing page modal *****
+const newsletterModal = () => {
+    const body = document.querySelector('body');
+    const modal = document.querySelector('#mainModal');
+    const modalBtn = document.querySelector('#modalBtn');
+    const closeModal = document.querySelector('.close');
+    const subscribeBtn = document.querySelector('.modal-btn');
+
+    if (body.contains(modal)) {
+        modalBtn.addEventListener('click', () => {
+            modal.style.display = "block";
+        }); 
+        
+        closeModal.addEventListener('click', () => {
+            modal.style.display = "none";
+        }); 
+    
+        subscribeBtn.addEventListener('click', () => {
+            modal.style.display = "none";
+        }); 
+        
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }); 
+    }
+}
+
 navSlide();
-newsletterModal();
 toggleBasket();
+newsletterModal();
+glide();
