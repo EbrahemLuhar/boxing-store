@@ -9,7 +9,14 @@ class Products {
         try {
             let result = await fetch("../../products.json");
             let data = await result.json();
-            return data;
+            let products = data.items;
+            products = products.map(item => {
+                const { type, brand, model, oldPrice, newPrice } = item.fields
+                const { id } = item.sys
+                const image = item.fields.image.fields.file.url;
+                return {type, brand, model, oldPrice, newPrice, id, image}
+            })
+            return products;
         } catch (error) {
             console.log(error)
         }
@@ -27,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const products = new Products();
 
     // get all products
-    products.getProducts().then(data => console.log(data));
+    products.getProducts().then(products => console.log(products));
 });
 
 // ***** Toggle mobile nav *****
