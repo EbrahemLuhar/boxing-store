@@ -1,6 +1,10 @@
 import '../../src/styles/scss/main.scss';
 import glider from './glider';
 
+const body = document.querySelector('body');
+const productsDOM = document.querySelector('.product-listings');
+
+
 let cart = [];
 
 // ***** Get the products from contentful *****
@@ -24,17 +28,63 @@ class Products {
 }
 
 // ***** Display the product to UI *****
-class UI {}
+class UI {
+    displayProducts(products) {
+        let result = '';
+        products.forEach(product => {
+            result += `
+                <div class="item">
+                    <div class="item-img-wrap">
+                        <img src="${product.image}" 
+                        alt="${product.brand} ${product.model}">
+                    </div>
+                    <div class="item-text-wrap">
+                        <h3>${product.brand}</h3>
+                        <div class="item-info">
+                            <p>${product.model}</p>
+                        </div>
+                        <div class="item-price">
+                            <span class="old-price"><del>${product.oldPrice}</del></span>
+                            <span class="sale-price">${product.newPrice}</span>
+                        </div>
+                        <button class="basket-btn" data-id=${product.id}>
+                            <i class="fas fa-shopping-cart"></i>
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+            `;
+        });
+        if (body.contains(productsDOM)) {
+            productsDOM.innerHTML = result;
+        }
+    }
+
+    getBasketButtons() {
+            const addToCartBtns = [...document.querySelectorAll('.basket-btn')];
+            console.log(addToCartBtns);
+    }
+}
 
 // ***** Work with local storage *****
-class Storage {}
+class Storage {
+    // Using static methods so there is no need to create an instance
+    static saveProducts(products) {
+        localStorage.setItem("products", JSON.stringify(products));
+    }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     const ui = new UI();
     const products = new Products();
 
     // get all products
-    products.getProducts().then(products => console.log(products));
+    products.getProducts().then(products => {
+        ui.displayProducts(products)
+        Storage.saveProducts(products);
+    }).then(() => {
+        ui.getBasketButtons();
+    });
 });
 
 // ***** Toggle mobile nav *****
@@ -109,7 +159,6 @@ const toggleBasket = () => {
 
 // ***** Glider *****
 const glide = () => {
-    const body = document.querySelector('body');
     const glider = document.querySelector('.glider-wrap');
     if (body.contains(glider)) {
         window.addEventListener('load', function(){
