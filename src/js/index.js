@@ -3,9 +3,14 @@ import glider from './glider';
 
 const body = document.querySelector('body');
 const productsDOM = document.querySelector('.product-listings');
+const cartTotal = document.querySelector('.cart-total');
+const cartContainer = document.querySelector('.cart-container');
+const cartItemsNum = document.querySelector('.basket-num');
 
-
+// cart
 let cart = [];
+// buttons
+let buttonsDOM = [];
 
 // ***** Get the products from contentful *****
 class Products {
@@ -61,8 +66,63 @@ class UI {
     }
 
     getBasketButtons() {
-            const addToCartBtns = [...document.querySelectorAll('.basket-btn')];
-            console.log(addToCartBtns);
+        const addToCartBtns = [...document.querySelectorAll('.basket-btn')];
+        buttonsDOM = addToCartBtns;
+        addToCartBtns.forEach(button => {
+            let id = button.dataset.id;
+            let inCart = cart.find(item => item.id === id);
+            if(inCart) {
+                button.innerText = "In Basket";
+                button.disabled = true;
+            } 
+            button.addEventListener('click', event => {
+                event.target.innerText = "In Basket";
+                event.target.disabled = true;
+
+                // get the product from products based on id from button
+                let cartItem = {...Storage.getProduct(id), amount: 1};
+                // add product to the cart
+                cart = [...cart, cartItem];
+                // save the cart in local storage
+                Storage.saveCart(cart);
+                // set cart values 
+                this.setCartValues(cart);
+                // display the cart item
+                this.addCartItem(cartItem);
+                // show the cart
+            });
+        });
+    }
+
+    setCartValues(cart) {
+        let tempTotal = 0;
+        let itemsTotal = 0;
+        cart.map(item => {
+            tempTotal += item.price * item.amount;
+            itemsTotal += item.amount
+        });
+        cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+        cartItemsNum.innerHTML = itemsTotal;
+    }
+
+    addCartItem(item) {
+        const div = document.createElement('div');
+        div.classList.add('cart-content');
+        div.innerHTML = `
+            <img src="${item.image}" alt="${item.brand} ${item.model}">
+            <div class="cart-info">
+                <h4>${item.brand} ${item.model}</h4>
+                <h5>${item.newPrice}</h5>
+                <span class="remove-item" data-id=${item.id}></span>
+            </div>
+            <div class="cart-up-down">
+                <i class="fas fa-chevron-up" data-id=${item.id}></i>
+                <p class="item-amount">${item.amount}</p>
+                <i class="fas fa-chevron-down" data-id=${item.id}></i>
+            </div>
+        `;
+        cartContainer.appendChild(div);
+        console.log(cartContainer);    
     }
 }
 
@@ -71,6 +131,13 @@ class Storage {
     // Using static methods so there is no need to create an instance
     static saveProducts(products) {
         localStorage.setItem("products", JSON.stringify(products));
+    }
+    static getProduct(id) {
+        let products = JSON.parse(localStorage.getItem('products'));
+        return products.find(product => product.id === id);
+    }
+    static saveCart(cart) {
+        localStorage.setItem('cart', JSON.stringify(cart));
     }
 }
 
