@@ -6,6 +6,7 @@ const productsDOM = document.querySelector('.product-listings');
 const cartTotal = document.querySelector('.cart-total');
 const cartContainer = document.querySelector('.cart-container');
 const cartItemsNum = document.querySelector('.basket-num');
+const clearCartBtn = document.querySelector('.clear-cart');
 
 // cart
 let cart = [];
@@ -72,11 +73,11 @@ class UI {
             let id = button.dataset.id;
             let inCart = cart.find(item => item.id === id);
             if(inCart) {
-                button.innerText = "In Basket";
+                button.innerText = "In Cart";
                 button.disabled = true;
             } 
             button.addEventListener('click', event => {
-                event.target.innerText = "In Basket";
+                event.target.innerText = "In Cart";
                 event.target.disabled = true;
 
                 // get the product from products based on id from button
@@ -98,7 +99,7 @@ class UI {
         let tempTotal = 0;
         let itemsTotal = 0;
         cart.map(item => {
-            tempTotal += item.price * item.amount;
+            tempTotal += item.newPrice * item.amount;
             itemsTotal += item.amount
         });
         cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
@@ -113,7 +114,7 @@ class UI {
             <div class="cart-info">
                 <h4>${item.brand} ${item.model}</h4>
                 <h5>${item.newPrice}</h5>
-                <span class="remove-item" data-id=${item.id}></span>
+                <span class="remove-item" data-id=${item.id}>remove</span>
             </div>
             <div class="cart-up-down">
                 <i class="fas fa-chevron-up" data-id=${item.id}></i>
@@ -122,7 +123,62 @@ class UI {
             </div>
         `;
         cartContainer.appendChild(div);
-        console.log(cartContainer);    
+    }
+
+    setupApp() {
+        cart = Storage.getCart();
+        this.setCartValues(cart);
+        this.populateCart(cart);
+    }
+
+    populateCart(cart) {
+        cart.forEach(item => this.addCartItem(item));
+    }
+
+    cartLogic() {
+        // clear cart button
+        clearCartBtn.addEventListener('click', () => {
+            this.clearCart();
+        });
+
+        // cart functionality (event delegation)
+        cartContainer.addEventListener('click', event => {
+            if(event.target.classList.contains('remove-item')) {
+                let removeItem = event.target;
+                let id = removeItem.dataset.id;
+                cartContainer.removeChild(removeItem.parentElement.parentElement);
+                this.removeItem(id);
+            }
+            else if (event.target.classList.contains("fa-chevron-up")) {
+                let addAmount = event.target;
+                let id = addAmount.dataset.id;
+                console.log(addAmount);
+                
+            }
+        });
+    }
+
+    clearCart() {
+        let cartItems = cart.map(item => item.id);
+        cartItems.forEach(id => this.removeItem(id));
+        console.log(cartContainer.children);
+
+        while(cartContainer.children.length > 0) {
+            cartContainer.removeChild(cartContainer.children[0])
+        }
+    }
+
+    removeItem(id) {
+        cart = cart.filter(item => item.id !== id);
+        this.setCartValues(cart);
+        Storage.saveCart(cart);
+        let button = this.getSingleButton(id);
+        button.disabled = false;
+        button.innerHTML = `<i class="fas fa-shopping-cart"></i>ADD TO CART`
+    }
+
+    getSingleButton(id) {
+        return buttonsDOM.find(button => button.dataset.id === id);
     }
 }
 
@@ -139,11 +195,19 @@ class Storage {
     static saveCart(cart) {
         localStorage.setItem('cart', JSON.stringify(cart));
     }
+
+    static getCart() {
+        return localStorage.getItem('cart') ? 
+            JSON.parse(localStorage.getItem('cart')) : [];
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     const ui = new UI();
     const products = new Products();
+
+    // setup app
+    ui.setupApp();
 
     // get all products
     products.getProducts().then(products => {
@@ -151,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Storage.saveProducts(products);
     }).then(() => {
         ui.getBasketButtons();
+        ui.cartLogic();
     });
 });
 
