@@ -30,7 +30,8 @@
     "webpack-dev-server": "^3.4.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4"
+    "@babel/polyfill": "^7.4.4",
+    "contentful": "^7.7.0"
   },
   "keywords": [
     "boxing",
