@@ -44,34 +44,35 @@
                 font-weight: 600;
                 color: $black;
                 letter-spacing: 1px;
-                padding-bottom: 0.5rem;
+                margin-bottom: 2rem;
             }
 
-            .filter-price, .filter-brand, .filter-product {
-                padding: 1.2rem 0 0.5rem;
+            h5 {
+                font-size: 0.9rem;
+                font-weight: 600;
+                color: $grayBlack;
+                margin: 0.5rem 0; 
+            }
 
-                h5 {
-                    font-size: 0.9rem;
-                    font-weight: 600;
-                    color: $grayBlack;
-                }
+            .productFilters, .priceFilters, .brandFilters {
+                margin-bottom: 1.5rem;
 
                 div {
-                    padding-top: 0.8rem;
-                    display: flex;
-                    flex-direction: column;
-
-                    span {
-                        font-size: 0.85rem;
-                        margin-bottom: 0.2rem;
-                        padding: 0.2rem;
+                    padding: 0.2rem 0;
+                    
+                    input[type="checkbox"] {
+                        display: inline;
+                        margin-right: 15px;
                         cursor: pointer;
-                        max-width: 150px;
+                    }
+
+                    label {
+                        display: inline;
+                        font-size: 0.9rem;
+                        font-weight: 400;
+                        color: $offBlack;
                         letter-spacing: 1px;
-                        
-                        &:hover {
-                            text-decoration: underline;
-                        }
+                        cursor: pointer;
                     }
                 }
             }
