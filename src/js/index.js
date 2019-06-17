@@ -29,7 +29,6 @@ class Products {
                 content_type: 'boxingStore'
             });
             
-            
             // let result = await fetch("../../products.json");
             // let data = await result.json();
 
@@ -75,9 +74,17 @@ class UI {
                 </div>
             `;
         });
+
         if (body.contains(productsDOM)) {
             productsDOM.innerHTML = result;
         }
+
+        let newData = products.filter(item => {
+            if(item.newPrice >= 130) {
+                console.log(item);
+            }
+        });
+        return newData;
     }
 
     getBasketButtons() {
@@ -234,23 +241,6 @@ class Storage {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const ui = new UI();
-    const products = new Products();
-
-    // setup app
-    ui.setupApp();
-
-    // get all products
-    products.getProducts().then(products => {
-        ui.displayProducts(products)
-        Storage.saveProducts(products);
-    }).then(() => {
-        ui.getBasketButtons();
-        ui.cartLogic();
-    });
-});
-
 // ***** Toggle mobile nav *****
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -368,7 +358,24 @@ const newsletterModal = () => {
     }
 }
 
-navSlide();
-toggleBasket();
-newsletterModal();
-glide();
+document.addEventListener('DOMContentLoaded', () => {
+    const ui = new UI();
+    const products = new Products();
+
+    // setup app
+    ui.setupApp();
+
+    // get all products
+    products.getProducts().then(products => {
+        ui.displayProducts(products);
+        Storage.saveProducts(products);
+    }).then(() => {
+        ui.getBasketButtons();
+        ui.cartLogic();
+    });
+
+    navSlide();
+    toggleBasket();
+    newsletterModal();
+    glide();
+});
