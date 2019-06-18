@@ -1,6 +1,8 @@
 import '../../src/styles/scss/main.scss';
 import glider from './glider';
 
+var _ = require('lodash');
+
 const contentful = require('contentful');
 const client = contentful.createClient({
     // This is the space ID. A space is like a project folder in Contentful terms
@@ -75,17 +77,67 @@ class UI {
             `;
         });
 
-        if (body.contains(productsDOM)) {
-            productsDOM.innerHTML = result;
-        }
-
-        let newData = products.filter(item => {
-            if(item.newPrice >= 130) {
-                console.log(item);
+        // ---------- New checkbox, but add to basket fails ----------
+        const cbBoxingGloves = document.querySelector('#boxingGloves');
+        let boxingGlovesResult = '';
+        cbBoxingGloves.addEventListener('click', () => {
+            if(cbBoxingGloves.checked == true) {
+                products.forEach(product => {
+                    if (product.type == 'boxingGloves') {
+                        boxingGlovesResult += `
+                            <div class="item">
+                                <div class="item-img-wrap">
+                                    <img src="${product.image}" 
+                                    alt="${product.brand} ${product.model}">
+                                </div>
+                                <div class="item-text-wrap">
+                                    <h3>${product.brand}</h3>
+                                    <div class="item-info">
+                                        <p>${product.model}</p>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="old-price"><del>${product.oldPrice}</del></span>
+                                        <span class="sale-price">${product.newPrice}</span>
+                                    </div>
+                                    <button class="basket-btn" data-id=${product.id}>
+                                        <i class="fas fa-shopping-cart"></i>
+                                        add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        `;
+                    }
+                })
+                productsDOM.innerHTML = boxingGlovesResult;
+                console.log('gloves is checked');
+            } else {
+                console.log('gloves is not checked');
             }
-        });
-        return newData;
+        })
+
+
+        // if (body.contains(productsDOM) && products.length !== 0) {
+        //     productsDOM.innerHTML = boxingGlovesResult;
+        // } else if (products.length == 0 || products == undefined) {
+        //     productsDOM.innerHTML = "No products found";
+        // }
     }
+
+    // productsTest(products) {
+    //     const itemInfo = document.querySelector('.item-info-wrap');
+
+    //     let result = '';
+    //     products.forEach(product => {
+    //         if (product.type == 'boxingGloves' && product.newPrice > 10)
+    //         result += `${product.newPrice} ${product.brand} ${product.model} <br>`
+    //     });
+    //     itemInfo.innerHTML = result;
+    // }
+
+    checkCheckbox() {
+
+    }
+    
 
     getBasketButtons() {
         const addToCartBtns = [...document.querySelectorAll('.basket-btn')];
@@ -372,6 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }).then(() => {
         ui.getBasketButtons();
         ui.cartLogic();
+        ui.checkCheckbox();
     });
 
     navSlide();
