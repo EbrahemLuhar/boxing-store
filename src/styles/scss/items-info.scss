@@ -238,14 +238,24 @@
     #item-info {
         .container {
             .item-info-wrap {
-                padding: 1.5rem;
-                h1 {
-                    font-size: 1.4rem;
-                    margin-bottom: 0.3rem;
+                padding: 0.5rem;
+    
+                .title-links-wrap {
+                    margin-bottom: 1rem;
+                    h1 {
+                        font-size: 1.6rem;
+                    }
+    
+                    .breadcrumbs {
+                        padding-top: 7px;
+                    }
                 }
-
+    
                 p {
-                    font-size: 0.8rem;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    color: $grayBlack;
+                    line-height: 1.4;
                 }
             }
         }

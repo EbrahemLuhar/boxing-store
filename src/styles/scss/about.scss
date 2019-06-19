@@ -1,0 +1,33 @@
+#about-section {
+    margin-top: 60px;
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: #ffffff;
+
+        .about-wrap {
+            padding: 1.5rem;
+
+            .about-text {
+                padding: 2rem 0;
+
+                h2 {
+                    text-align: left;
+                    color: $offBlack;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin-bottom: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                    color: #6e6e6e;
+                    line-height: 1.4;
+                    margin-bottom: 0.9rem;
+                }
+            }
+        }
+    }
+}
