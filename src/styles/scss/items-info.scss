@@ -9,12 +9,40 @@
         .item-info-wrap {
             padding: 1.5rem;
 
-            h1 {
-                font-size: 2rem;
-                font-weight: 600;
-                color: $offBlack;
+            .title-links-wrap {
                 margin-bottom: 1rem;
-                padding: 0.2rem 0;
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: $offBlack;
+                    padding: 0.2rem 0;
+                    display: inline;
+                }
+
+                .breadcrumbs {
+                    display: flex;
+                    align-items: center;
+                    float: right;
+                    padding-top: 7px;
+                    a {
+                        text-decoration: none;
+                        font-size: 0.7rem;
+                        color: $darkGray;
+                        font-weight: 700;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    .slash {
+                        padding: 0 0.2rem;
+                    }
+                    p {
+                        font-size: 0.7rem;
+                        color: $darkGray;
+                        font-weight: 400;
+                    }
+                }
             }
 
             p {
@@ -35,139 +63,9 @@
         display: grid;
         grid-template-columns: 1fr;
 
-        .filter {
-            display: none;
-            background: $lightGray;
-            padding: 1.5rem;
-
-            h4 {
-                font-size: 1rem;
-                font-weight: 600;
-                color: $black;
-                letter-spacing: 1px;
-                margin-bottom: 2rem;
-            }
-
-            h5 {
-                font-size: 0.9rem;
-                font-weight: 600;
-                color: $grayBlack;
-                margin: 0.5rem 0; 
-            }
-
-            .productFilters, .priceFilters, .brandFilters {
-                margin-bottom: 1.5rem;
-
-                div {
-                    padding: 0.2rem 0;
-                    
-                    input[type="checkbox"] {
-                        display: inline;
-                        margin-right: 15px;
-                        cursor: pointer;
-                    }
-
-                    label {
-                        display: inline;
-                        font-size: 0.9rem;
-                        font-weight: 400;
-                        color: $offBlack;
-                        letter-spacing: 1px;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-
         .products {
             background: #ffffff;
             border-top: 3px solid $lightGray;
-
-            .product-options {
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                border-bottom: 2px solid $lightGray;
-                padding: 0.5rem 0.8rem;
-
-                .search {
-                    
-                    input[type=search] {
-                        padding: 0.5rem 0;
-                        border: none;
-                        outline: none;
-                        font-size: 1.2rem;
-                        font-weight: 300;
-                        color: $darkGray;
-                        -webkit-appearance: none;
-                        appearance: none;
-
-                        &:focus {
-                            outline: none;
-                            
-                        }
-                    }
-
-                    input[type=search]::placeholder {
-                        font-weight: 300;
-                        color: $darkGray;
-                    }
-
-                    .glovesSearchIcon {
-                        color: $darkGray;
-                        padding-right: 0.5rem;
-                    }
-                }
-
-                .view-options {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    .sort-by {
-                        span {
-                            font-size: 0.9rem;
-                            font-weight: 600;
-                            padding-right: 0.4rem;
-                            color: $grayBlack;
-                        }
-
-                        #sortBy {
-                            font-size: 0.85rem;
-                            font-weight: 400;
-                            color: $grayBlack;
-                            padding: 5px;
-                            background: transparent;
-                            -webkit-appearance: none;
-                            appearance: none;
-                        }
-                    }
-
-                    .breadcrumbs {
-                        margin-left: 2rem;
-
-                        a {
-                            text-decoration: none;
-                            font-size: 0.9rem;
-                            font-weight: 600;
-                            color: $grayBlack;
-
-                            &:last-child {
-                                font-weight: 400;
-                                color: $darkGray;
-                            }
-
-                            &:hover {
-                                text-decoration: underline;
-                            }
-                        }
-
-                        span {
-                            color: $grayBlack;
-                        }
-                    }
-                }
-            }
         }
 
         .product-listings {
@@ -182,7 +80,7 @@
             .item {
                 position: relative;
                 overflow: hidden;
-                height: 320px;
+                height: 380px;
                 padding: 10px;
                 border: 2px solid transparent;
                 transition: all 0.2s ease-in-out;
@@ -312,11 +210,10 @@
                 padding: 1rem;
                 h1 {
                     font-size: 1.5rem;
-                    margin-bottom: 0.5rem;
                 }
 
                 p {
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                 }
             }
         }
@@ -341,91 +238,14 @@
     #item-info {
         .container {
             .item-info-wrap {
-                padding: 0.7rem;
+                padding: 1.5rem;
                 h1 {
                     font-size: 1.4rem;
                     margin-bottom: 0.3rem;
                 }
 
                 p {
-                    font-size: 0.7rem;
-                }
-            }
-        }
-    }
-
-    #item-products {
-        .container {
-            .products {
-                border-top: 2px solid $lightGray;
-    
-                .product-options {
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-    
-                    .search {
-                        width: 100%;
-                        text-align: center;
-
-                        input[type=search] {
-                            text-align: center;
-                            padding: 0rem;
-                            margin: 0.3rem;
-                            padding: 0.2rem 0;
-                            border-bottom: 1px solid $gray;
-                        }
-                    }
-    
-                    .view-options {
-                        margin-top: 0.6rem;
-                        margin-bottom: 0.6rem;
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-around;
-                        .sort-by {
-                            span {
-                                font-size: 0.8rem;
-                                font-weight: 600;
-                                padding: 0;
-                                color: $grayBlack;
-                            }
-    
-                            #sortBy {
-                                font-size: 0.7rem;
-                                font-weight: 400;
-                                color: $grayBlack;
-                                padding: 2px;
-                                background: transparent;
-                                -webkit-appearance: none;
-                                appearance: none;
-                            }
-                        }
-    
-                        .breadcrumbs {
-                            margin-left: 0rem;
-    
-                            a {
-                                text-decoration: none;
-                                font-size: 0.8rem;
-                                font-weight: 600;
-                                color: $grayBlack;
-    
-                                &:last-child {
-                                    font-weight: 400;
-                                    color: $darkGray;
-                                }
-    
-                                &:hover {
-                                    text-decoration: underline;
-                                }
-                            }
-    
-                            span {
-                                color: $grayBlack;
-                            }
-                        }
-                    }
+                    font-size: 0.8rem;
                 }
             }
         }
