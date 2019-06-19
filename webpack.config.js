@@ -20,8 +20,8 @@ module.exports = {
             template: './src/index.html'
         }),
         new HtmlWebpackPlugin({
-            filename: 'gloves.html',
-            template: './src/gloves.html'
+            filename: 'products.html',
+            template: './src/products.html'
             
         }),
         new MiniCssExtractPlugin({
