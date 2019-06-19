@@ -1,7 +1,8 @@
 import '../../src/styles/scss/main.scss';
 import glider from './glider';
-
-var _ = require('lodash');
+import NewsLetterModal from './newsletterModal';
+import Basket from './basket';
+import NavSlide from './navSlide';
 
 const contentful = require('contentful');
 const client = contentful.createClient({
@@ -40,7 +41,7 @@ class Products {
                 const { id } = item.sys
                 const image = item.fields.image.fields.file.url;
                 return {type, brand, model, oldPrice, newPrice, id, image}
-            })
+            });
             return products;
         } catch (error) {
             console.log(error)
@@ -240,76 +241,6 @@ class Storage {
     }
 }
 
-// ***** Toggle mobile nav *****
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.mobile-menu');
-    const closeNav = document.querySelector('.fa-times');
-    const mobileLinks = document.querySelector('.mobile-menu-container a');
-    const overlay = document.querySelector('.overlay');
-
-    function CloseMobileNav() {
-        nav.classList.remove('mobile-nav-slide');
-        overlay.classList.remove('overlay-active');
-    }
-
-    function OpenMobileNav() {
-        nav.classList.add('mobile-nav-slide');
-        overlay.classList.add('overlay-active');
-    }
-
-    burger.addEventListener('click', () => {
-        OpenMobileNav();
-    });
-
-    closeNav.addEventListener('click', () => {
-        CloseMobileNav();
-    });
-    
-    mobileLinks.addEventListener('click', () => {
-        CloseMobileNav();
-    });
-
-    overlay.addEventListener('click', () => {
-        CloseMobileNav();
-    });
-}
-
-// ***** Basket Open Close Toggle *****
-const toggleBasket = () => {
-    const basket = document.querySelector('.fa-shopping-basket');
-    const cart = document.querySelector('.cart');
-    const closeCart = document.querySelector('.close-basket');
-    const basketNum = document.querySelector('.basket-num');
-    const overlay = document.querySelector('.overlay');
-
-    function OpenBasket() {
-        cart.style.transform = "translateX(0)";
-        overlay.classList.add('overlay-active');
-    }
-
-    function CloseBasket() {
-        cart.style.transform = "translateX(100%)";
-        overlay.classList.remove('overlay-active');
-    }
-
-    basket.addEventListener('click', () => {
-        OpenBasket();
-    });
-
-    basketNum.addEventListener('click', () => {
-        OpenBasket();
-    });
-
-    closeCart.addEventListener('click', () => {
-        CloseBasket();
-    });
-
-    overlay.addEventListener('click', () => {
-        CloseBasket();
-    });
-}
-
 // ***** Glider *****
 const glide = () => {
     const glider = document.querySelector('.glider-wrap');
@@ -328,38 +259,12 @@ const glide = () => {
     }
 }
 
-// ***** Landing page modal *****
-const newsletterModal = () => {
-    const body = document.querySelector('body');
-    const modal = document.querySelector('#mainModal');
-    const modalBtn = document.querySelector('#modalBtn');
-    const closeModal = document.querySelector('.close');
-    const subscribeBtn = document.querySelector('.modal-btn');
-
-    if (body.contains(modal)) {
-        modalBtn.addEventListener('click', () => {
-            modal.style.display = "block";
-        }); 
-        
-        closeModal.addEventListener('click', () => {
-            modal.style.display = "none";
-        }); 
-    
-        subscribeBtn.addEventListener('click', () => {
-            modal.style.display = "none";
-        }); 
-        
-        window.addEventListener('click', (event) => {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }); 
-    }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     const ui = new UI();
     const products = new Products();
+    const newsLetter = new NewsLetterModal();
+    const basket = new Basket();
+    const nav = new NavSlide();
 
     // setup app
     ui.setupApp();
@@ -373,8 +278,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ui.cartLogic();
     });
 
-    navSlide();
-    toggleBasket();
-    newsletterModal();
+    nav.navSlide();
+    basket.toggleBasket();
+    newsLetter.newsletterModal();
     glide();
 });
