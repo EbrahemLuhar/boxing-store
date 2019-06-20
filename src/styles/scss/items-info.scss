@@ -239,6 +239,7 @@
         .container {
             .item-info-wrap {
                 padding: 0.5rem;
+                padding-top: 1rem;
     
                 .title-links-wrap {
                     margin-bottom: 1rem;
@@ -252,7 +253,7 @@
                 }
     
                 p {
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                     font-weight: 300;
                     color: $grayBlack;
                     line-height: 1.4;
