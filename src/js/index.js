@@ -3,6 +3,7 @@ import glider from './glider';
 import NewsLetterModal from './newsletterModal';
 import Basket from './basket';
 import NavSlide from './navSlide';
+import Blog from './blogToggle';
 
 const contentful = require('contentful');
 const client = contentful.createClient({
@@ -265,6 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const newsLetter = new NewsLetterModal();
     const basket = new Basket();
     const nav = new NavSlide();
+    const blog = new Blog();
 
     // setup app
     ui.setupApp();
@@ -282,4 +284,6 @@ document.addEventListener('DOMContentLoaded', () => {
     basket.toggleBasket();
     newsLetter.newsletterModal();
     glide();
+    blog.toggleBlog();
+    
 });
