@@ -21,6 +21,7 @@
                 border: 2px solid $darkGray;
                 border-radius: 20px;
                 padding: 1.5rem;
+                margin-bottom: 2rem;
 
                 .blog-post-title {
                     display: grid;
@@ -61,6 +62,7 @@
                 }
 
                 .blog-post-body {
+                    display: none;
                     margin-top: 2.5rem;
 
                     h3 {
@@ -106,6 +108,90 @@
                                     color: #6e6e6e;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #blog-section {
+        .container {
+            .blog-wrap {
+                padding: 1rem;
+
+                .blog-post {
+                    .blog-post-title {
+                        .blog-post-heading {
+                            font-size: 1.5rem;                   
+                        }
+                    }
+    
+                    .blog-post-body {
+                        h3 {
+                            font-size: 1.3rem;
+                        }
+    
+                        p {
+                            font-size: 1rem;
+                        }
+    
+                        .pros-cons {
+                            margin-top: 2rem;
+                            .pros, .cons {
+                                h4 {
+                                    font-size: 1.3rem;
+                                    margin-bottom: 1rem;
+                                }
+    
+                                ul {
+                                    li {
+                                        margin-bottom: 0.6rem;
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #blog-section {
+        .container {
+            .blog-wrap {
+                padding: 0.5rem;
+                padding-top: 1rem;
+
+                .blog-post {
+                    padding: 0.5rem;
+
+                    .blog-post-title {
+                        .blog-img {
+                            max-width: 175px;
+    
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .blog-post-heading {
+                            font-size: 1.1rem;
+                            line-height: 1.2;                   
+                        }
+                    }
+    
+                    .blog-post-body {
+                        h3 {
+                            font-size: 1.2rem;
+                        }
+    
+                        p {
+                            font-size: 0.9rem;
                         }
                     }
                 }
