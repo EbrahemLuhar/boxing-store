@@ -22,117 +22,6 @@
             margin: 0 auto;
             max-width: 1000px;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 1fr;
-            // grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-            grid-column-gap: 1.5rem;
-            grid-row-gap: 2rem;
-            padding-bottom: 2rem;
-
-            .item {
-                position: relative;
-                overflow: hidden;
-                height: 350px;
-                padding: 10px;
-                border: 2px solid transparent;
-                transition: all 0.2s ease-in-out;
-
-                &:hover {
-                    border: 2px solid $darkGray;
-                    background: transparent;
-
-                    .item-img-wrap {
-                        img {
-                            transform: scale(0.9);
-                        }
-                    }
-
-                    .item-text-wrap {
-                        .basket-btn {
-                            transform: translateX(0);
-                        }
-                    }
-                }
-
-                .item-img-wrap {
-                    max-width: 220px;
-                    display: block;
-                    margin: 0 auto;
-
-                    img {
-                        width: 100%;
-                        transition: all 0.2s ease-in-out;
-                    }
-                }
-
-                .item-text-wrap {
-                    text-align: center;
-                    color: $offBlack;
-                    padding: 0 5px;
-
-                    h3 {
-                        font-size: 1.1rem;
-                        font-weight: 700;
-                        font-family: 'Oswald', sans-serif;
-                        letter-spacing: 1px;
-                        padding: 20px 0 10px;
-                    }
-
-                    .item-info {
-                        height: 50px;
-                        p {
-                            font-size: 0.8rem;
-                            color: $black;
-                            line-height: 1.3;
-                            letter-spacing: 1px;
-                        }
-                    }
-
-                    .item-price {
-                        display: flex;
-                        justify-content: center;
-                        align-items: baseline;
-                        padding-bottom: 10px;
-
-                        .old-price {
-                            color: $darkGray;
-                            font-size: 1rem;
-                        }
-
-                        .sale-price {
-                            font-size: 1.4rem;
-                            font-weight: 700;
-                            padding-left: 10px;
-                        }
-                    }
-
-                    .basket-btn {
-                        position: absolute;
-                        top: -2px;
-                        right: 0;
-                        width: 100%;
-                        background: $darkGray;
-                        border: none;
-                        outline: none;
-                        text-transform: uppercase;
-                        color: #ffffff;
-                        padding: 0.5rem 0.75rem;
-                        letter-spacing: 1px;
-                        font-weight: bold;
-                        transition: all 0.3s ease-in-out;
-                        transform: translateX(101%);
-                        cursor: pointer;
-
-                        &:hover {
-                            color: $offBlack;
-                        }
-
-                        .fa-shopping-cart {
-                            margin-right: 0.5rem;
-                        }
-                    }
-                }
-            }
         }
     }
 }
@@ -151,12 +40,7 @@
             }
     
             .product-wrap {
-                max-width: 500px;
-                grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 
-                .item {
-                    height: 370px;
-                }
             }
         }
     }
@@ -176,42 +60,7 @@
             }
     
             .product-wrap {
-                max-width: 420px;
-                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-                grid-column-gap: 0.2rem;
-                grid-row-gap: 1rem;
 
-                .item {
-                    height: 320px;
-                    border: 2px solid transparent;
-                    transition: all 0.2s ease-in-out;
-    
-                    a {
-                        .item-text-wrap {
-                            h3 {
-                                font-size: 1rem;
-                                padding: 10px 0 8px;
-                            }
-        
-                            .item-info {
-                                height: 55px;
-                                p {
-                                    font-size: 0.8rem;
-                                }
-                            }
-        
-                            .item-price {
-                                .old-price {
-                                    font-size: 0.9rem;
-                                }
-        
-                                .sale-price {
-                                    font-size: 1.2rem;
-                                }
-                            }
-                        }
-                    }
-                }
             }
         }
     }
@@ -221,27 +70,7 @@
     .landing-products {
         .products-container {
             .product-wrap {
-                max-width: 420px;
-                grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-                grid-column-gap: 0.2rem;
-                grid-row-gap: 0.5rem;
-
-                .item {
-                    height: 375px;
-                    border: 2px solid transparent;
-                    transition: all 0.2s ease-in-out;
-    
-                    a {
-                        .item-text-wrap {
-                            .item-info {
-                                height: 55px;
-                                p {
-                                    font-size: 0.7rem;
-                                }
-                            }
-                        }
-                    }
-                }
+                
             }
         }
     }
